@@ -22,6 +22,14 @@
     <title> Restaurant Grão </title>
   </head>
   <body>
+      <div id="scroll-to-top" data-show="false">
+        <i data-feather="arrow-up"></i>
+      </div>
+
+      <script src="https://unpkg.com/feather-icons"></script>
+      <script>
+          feather.replace()
+      </script>
     
     <header><!-- inicio nav -->
         <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
@@ -60,7 +68,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="" class="nav-link">Onetwoone</a>
+                            <i class="fas fa-shopping-cart cart"></i>
                         </li>
                     </ul>
                 </div>
@@ -74,13 +82,13 @@
             <div class="row"> <!-- row-->
                 <div class="col-md-12 capa">
 
-                    <h1 class="display-4">Restaurant Grão</h1>
+                    <h1 style="text-transform: uppercase;">Restaurant <br><i style="color: #fdd835;">Grão</i></h1>
                     <a href="#" class="btn btn-lg btn-custom btn-roxo">
-                        Cadastre-se
+                       DIXGRAÇA AAAAAAAAAAAAA
                     </a>
 
                     <a href="" class="btn btn-lg btn-custom btn-branco">
-                        Cardapio
+                        DIXGRAÇA
                     </a>
 
 
@@ -89,36 +97,37 @@
         </div> <!-- container -->
     </section> <!-- home -->
 
-    <section id="services" class="caixa d-flex"><!-- services -->
-        <div class="container align-self-center"> <!-- container -->
-            <div class="row"> <!-- row -->
+    <section class="services">
 
-                <div class="col-md-6 mx-auto"> <!-- col imagens -->
-                    <div class="row albuns">
-                        <div class="col-md-6">
-                            <img src="imagens/1.jpg" class="img-fluid d-none d-md-block">
-                            
-                        </div>
-    
-                        <div class="col-md-6">
-                            <img src="imagens/1.jpg" class="img-fluid d-none d-md-block">
-                        </div>
-                    </div>
+        <div class="textoservices">
+            <h1>Serviços</h1>
+        </div>
+        <div class="s-box-container">	
 
-                    <div class="row albuns">
-                        <div class="col-md-6">
-                            <img src="imagens/1.jpg" class="img-fluid d-none d-md-block">
-                        </div>
-    
-                        <div class="col-md-6">
-                            <img src="imagens/1.jpg" class="img-fluid d-none d-md-block">
-                        </div>
-                    </div>
-                </div> <!-- col imagens-->
+            <div class="s-box">
+                <div class="bar"></div> 
+                    <img src="imagens/1.png" class="d-none d-md-block"/>
+                    <h1>Economize Dinheiro</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                </div>
+           	
+        <div class="s-box">
+            <div class="bar"></div> 
+                <img src="imagens/2.png" class="d-none d-md-block"/>
+                <h1>Descontos</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicin</p>
+             </div>
+            	
+        <div class="s-box">
+            <div class="bar"></div> 
+                <img  src="imagens/3.png" class="d-none d-md-block"/>  
+                <h1>Segurança</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.   
+                </p>
+            </div>
+        </div>
 
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section> <!-- services -->
+    </section>
 
     <section id="recursos" class="caixa"> <!-- recursos -->
         <div class="container"> <!-- container-->
@@ -203,6 +212,30 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const scrollToTop = document.getElementById('scroll-to-top'); 
+        let datashow = false; 
+
+            window.addEventListener ('scroll', () => {
+            if (window.scrollY > 50 && !datashow) {
+            scrollToTop.setAttribute('data-show', 'true'); 
+            datashow = true;
+            }
+	
+            if (window.scrollY <= 50 && !datashow) {
+            scrollToTop.setAttribute('data-show'), ('false'); 
+            datashow = false; 
+            }
+        });
+
+        scrollToTop.addEventListener('click',() => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+        }); 
+    });
+    </script>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
