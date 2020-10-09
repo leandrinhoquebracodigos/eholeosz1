@@ -19,24 +19,18 @@
     <!-- Estilo customizado -->
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
 
+    <!-- javascript -->
+
     <title> Restaurant Grão </title>
   </head>
   <body>
-      <div id="scroll-to-top" data-show="false">
-        <i data-feather="arrow-up"></i>
-      </div>
-
-      <script src="https://unpkg.com/feather-icons"></script>
-      <script>
-          feather.replace()
-      </script>
     
     <header><!-- inicio nav -->
-        <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
+        <nav class="navbar navbar-expand-md navbar-light navbar-transparente">
             <div class="container">
 
-                <a href="index.html" class="navbar-brand">
-                    Restaurant Grão
+                <a href="index.html" class="navbar-brand text-white">
+                    <i class="fab fa-envira"> Restaurant Grão</i>
                 </a>
 
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navprincipal">
@@ -46,30 +40,18 @@
                 <div class="collapse navbar-collapse" id="navprincipal">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link">Inicio</a>
+                            <a href="index.html" class="nav-link"><i class="fa fa-home"></i> Inicio</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a href="produtos.html" class="nav-link">Produtos</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="clientes.html" class="nav-link">Clientes</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Entregador</a>
-                        </li>
+                        
                         
                         <li class="nav-item divisor"></li>
                         
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Twoone</a>
+                        <li class="nav-item conta">
+                           <a href="account.html"><i class="fas fa-sign-in-alt"></i>Login</a> 
                         </li>
 
-                        <li class="nav-item">
-                            <i class="fas fa-shopping-cart cart"></i>
-                        </li>
+                        
                     </ul>
                 </div>
 
@@ -80,22 +62,35 @@
     <section id="home" class="d-flex"> <!-- home -->
         <div class="container align-self-center"><!-- container-->
             <div class="row"> <!-- row-->
-                <div class="col-md-12 capa">
+                <div class="col-md-4 capa">
+                    
+                    <strong class="titulocapa" style="font-size: 70px; color: green;">Pequeno Grão<i class="fab fa-envira"></i></strong>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    <i class="fab fa-facebook-square" style="color: white;"></i>
+                    <i class="fab fa-instagram" style="color: white;"></i>   
+                    <i class="fab fa-twitter" style="color: white;"></i>
+                    </p>
 
-                    <h1 style="text-transform: uppercase;">Restaurant <br><i style="color: #fdd835;">Grão</i></h1>
-                    <a href="#" class="btn btn-lg btn-custom btn-roxo">
-                       DIXGRAÇA AAAAAAAAAAAAA
-                    </a>
-
-                    <a href="" class="btn btn-lg btn-custom btn-branco">
-                        DIXGRAÇA
-                    </a>
+                    <button>
+                    <a href="account.html">Comece agora
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                    </a></button>
 
 
                 </div>
+                <div class="col-md-4 ml-auto">
+
+                    
+                </div>
+
             </div> <!-- row -->
+           
         </div> <!-- container -->
+      
     </section> <!-- home -->
+  
+
+    
 
     <section class="services">
 
@@ -106,22 +101,22 @@
 
             <div class="s-box">
                 <div class="bar"></div> 
-                    <img src="imagens/1.png" class="d-none d-md-block"/>
-                    <h1>Economize Dinheiro</h1>
+                    <img src="imagens/asdsas copy.png" class="d-none d-md-block"/>
+                    <h1>Cardapio</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
                 </div>
            	
         <div class="s-box">
             <div class="bar"></div> 
-                <img src="imagens/2.png" class="d-none d-md-block"/>
-                <h1>Descontos</h1>
+                <img src="imagens/midia-social copy.png" class="d-none d-md-block"/>
+                <h1>Acompanhe</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicin</p>
              </div>
             	
         <div class="s-box">
             <div class="bar"></div> 
-                <img  src="imagens/3.png" class="d-none d-md-block"/>  
-                <h1>Segurança</h1>
+                <img  src="imagens/desconto.png" class="d-none d-md-block"/>  
+                <h1>Descontos</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.   
                 </p>
             </div>
@@ -129,36 +124,117 @@
 
     </section>
 
-    <section id="recursos" class="caixa"> <!-- recursos -->
-        <div class="container"> <!-- container-->
-            <div class="row"> <!-- row -->
-                <div class="col-md-4"> <!-- col 4 -->
-                    <h2> Conhece alguma receita? </h2>
-                    
-                    <h3>Mande pra gente</h3>
-                    <p>Quem sabe sua receita de familia apareça 
-                        no nosso cardápio
-                    </p>
-                    <h3>e-mail de contato:</h3>
-                    <p>restaurantgrão@outlook.com</p>
+    <section id="receitas" class="d-flex" style="background: white;">
+        <div class="small-container">
+            <h2>Receitas da semana</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="https://instagram.fssa13-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/120370703_178859143720948_8777030091633708566_n.jpg?_nc_ht=instagram.fssa13-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=U5wYZAOc3w0AX-CkW2h&oh=d64fb433bd4d2a88399be727358c59c5&oe=5F9E291A">
+                    <button class="btn btn-success overlay">Veja Mais</button>
+                </div>
+                <div class="col-sm-4">
+                    <img src="https://instagram.fssa13-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/120348090_2764462143824121_1466104885700176898_n.jpg?_nc_ht=instagram.fssa13-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=7QeMIN3MgBkAX8tQVyo&oh=699db6874cbb8669ad9d2c50698bdc28&oe=5F9F99BA">
+                    <button class="btn btn-success overlay">Veja Mais</button>
+                </div>
+                <div class="col-sm-4">
+                    <img src="https://instagram.fssa13-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/120246296_142094320921524_4877730532073646543_n.jpg?_nc_ht=instagram.fssa13-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=lllzAUTQdAcAX9cDwnp&oh=75c77cd1208c499dab48b373682e43f8&oe=5F9F452D">
+                    <button class="btn btn-success overlay">Veja Mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                </div> <!-- col -4 -->
+    <section id="noticiasprincipais" style="background: white;">
+        <section id="noticias">
+            <div class="container">
+              <h1 class="titulonoticias">NOTÍCIAS SOBRE VEGETARIANISMO</h1>
+              <hr id="separador">
+              <div class="row">
+                <div class="col-4 noticiass">
+                  <img src="imagens/noticias1.jpg" alt="">
+                </div>
+                <div class="col-4">
+                  <a href="#" style="color: green;">Saúde</a>
+                  <h2 class="textonoticias">Consumo de proteína vegetal aumenta a longevidade, diz estudo
+                  </h2>
+                  
+                  <span>
+                    por <strong style="color: green;">Giulia Vidale</strong> 
+                    Atualizado em 11 set 2020, 17h13 - Publicado em 11 set 2020, 16h59    
+                  </span>
+                </div>
+                  
+                <div class="col-4 revisao">
+                  Revisão publicada no BMJ revelou que adicionar leguminosas, grãos inteiros e nozes à dieta reduz o risco de morte prematura em 8%
+                </div>
+          </section>
+      
+          <section id="noticias" style="background: white;">
+            <div class="container">
+              <hr id="separador">
+              <div class="row">
+                <div class="col-4 noticiass">
+                  <img src="imagens/noticias2.jpg" alt="">
+                </div>
+                <div class="col-4">
+                  <a href="#" style="color: green;">Ideias</a>
+                  <h2 class="textonoticias">O home office abre espaço para as fazendas verticais urbanas 
+                  </h2>
+                  
+                  <span>
+                    por <strong style="color: green;">Jennifer Ann Thomas</strong> 
+                    Atualizado em 7 ago 2020, 13h32 - Publicado em 7 ago 2020, 06h00    
+                  </span>
+                </div>
+                  
+                <div class="col-4 revisao">
+                  Elas se tornam opção vantajosa para produzir alimentos em grandes centros e dar um destino mais nobre a edifícios desocupados
+                </div>
+          </section>
+      
+          <section id="noticias" style="background: white;">
+            <div class="container">
+              <hr id="separador">
+              <div class="row">
+                <div class="col-4 noticiass">
+                  <img src="imagens/noticias3.jpg" alt="">
+                </div>
+                <div class="col-4">
+                  <a href="#" style="color: green;">Saúde</a>
+                  <h2 class="textonoticias">Carne animal é importante para a proteção do planeta,
+                     dizem cientistas 
+                  </h2>
+                  
+                  <span>
+                    por <strong style="color: black;">Redação</strong> 
+                    - 28 nov 2019, 14h23    
+                  </span>
+                </div>
+                  
+                <div class="col-4 revisao">
+                  Os animais criados para a alimentação colaboram para aumentar a biodiversidade
+                </div>
+                <hr id="separador">
+          </section>
+          
+    </section>
+   
+    
+    
+    <section style="background: #f5f5f5;">
 
-                <div class="col-md-8"> <!-- col 8-->
-                    <div class="row rotacionar">
-                        <div class="col-md-6">
-                            <img src="imagens/business-4271251.svg" class="img-fluid d-none d-md-block">
-                        </div>
+    <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-4" style="color: black;">Sua Receita no nosso Cardapio</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a class="btn btn-primary btn-lg" href="">Leia mais</a>
+        </div>
+    </div>
+    </section>
 
-                        <div class="col-md-6">
-                            <h2 class="d-none d-md-block">Seu Prato no nosso Cardápio</h2>
-                        </div>
-                    </div>
-                    
-                </div> <!-- col 8-->
-            </div> <!-- row -->
-        </div> <!-- container-->
-    </section> <!-- recursos-->
+   
 
     <footer>
         <div class="container">
@@ -204,7 +280,7 @@
                         </li>
 
                         <li>
-                            <a href="https://www.instagram.com/llllllleandro/"><img src="imagens/instagram.png" alt=""></a>
+                            <a href="https://www.instagram.com/pequnograo/"><img src="imagens/instagram.png" alt=""></a>
                         </li>
                     </ul>
                 </div>
@@ -213,29 +289,7 @@
         </div>
     </footer>
 
-    <script>
-        const scrollToTop = document.getElementById('scroll-to-top'); 
-        let datashow = false; 
-
-            window.addEventListener ('scroll', () => {
-            if (window.scrollY > 50 && !datashow) {
-            scrollToTop.setAttribute('data-show', 'true'); 
-            datashow = true;
-            }
-	
-            if (window.scrollY <= 50 && !datashow) {
-            scrollToTop.setAttribute('data-show'), ('false'); 
-            datashow = false; 
-            }
-        });
-
-        scrollToTop.addEventListener('click',() => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-        }); 
-    });
-    </script>
+    
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
